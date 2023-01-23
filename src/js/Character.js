@@ -3,23 +3,23 @@ export default class Character {
     this.health = 100;
     this.level = 1;
     const types = [
-      'Bowman',
-      'Swordsman',
-      'Magician',
-      'Daemon',
-      'Undead',
-      'Zombie',
+      "Bowman",
+      "Swordsman",
+      "Magician",
+      "Daemon",
+      "Undead",
+      "Zombie",
     ];
 
     if (types.indexOf(type) === -1) {
-      throw new Error('такого класса нет');
+      throw new Error("такого класса нет");
     } else {
       this.type = type;
     }
 
     if (name.length < 2 || name.length > 10) {
       throw new Error(
-        'Ошибка:должна быть больше двух и не более десяти символов включительно'
+        "Ошибка:должна быть больше двух и не более десяти символов включительно"
       );
     } else {
       this.name = name;
@@ -43,11 +43,11 @@ export default class Character {
       this.defence += (this.defence / 100) * 20;
       this.health = 100;
     } else {
-      throw new Error('Нельзя повысить левел умершего');
+      throw new Error("Нельзя повысить левел умершего");
     }
   }
 
-   // damage(points) {
+  // damage(points) {
   //   if (this.health <= 0) {
   //     this.health = 0;
   //   }
