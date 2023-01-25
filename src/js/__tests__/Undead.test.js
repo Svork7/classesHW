@@ -1,6 +1,6 @@
-import Character from "../Undead";
+import Undead from "../Undead";
 test("проверяем дочерний класс Undead", () => {
-  const person = new Character("Вася", "Undead");
+  const person = new Undead("Вася", "Undead");
   const result = {
     name: "Вася",
     type: "Undead",

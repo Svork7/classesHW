@@ -1,6 +1,6 @@
-import Character from "../Daemon";
+import Daemon from "../Daemon";
 test("проверяем дочерний класс Daemon", () => {
-  const person = new Character("Вася", "Daemon");
+  const person = new Daemon("Вася", "Daemon");
   const result = {
     name: "Вася",
     type: "Daemon",

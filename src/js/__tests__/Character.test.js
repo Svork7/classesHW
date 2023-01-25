@@ -1,6 +1,6 @@
 import Character from "../Character";
 
-test("Создание нового персонажа,ошибок нет", () => {
+test("Создание нового персонажа, ошибок нет", () => {
   const person = new Character("Вася", "Magician");
 
   const result = {

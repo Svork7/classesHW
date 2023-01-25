@@ -1,6 +1,6 @@
-import Character from "../Swordsman";
+import Swordsman from "../Swordsman";
 test("проверяем дочерний класс Swordsman", () => {
-  const person = new Character("Вася", "Swordsman");
+  const person = new Swordsman("Вася", "Swordsman");
   const result = {
     name: "Вася",
     type: "Swordsman",

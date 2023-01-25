@@ -1,6 +1,6 @@
-import Character from "../Zombie";
-test("проверяем главнный класс Character", () => {
-  const person = new Character("Вася", "Zombie");
+import Zombie from "../Zombie";
+test("проверяем дочерний класс Zombie", () => {
+  const person = new Zombie("Вася", "Zombie");
   const result = {
     name: "Вася",
     type: "Zombie",
